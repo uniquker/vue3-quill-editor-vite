@@ -1,0 +1,24 @@
+.quill_editor{
+  display: flex;
+  flex-direction: column;
+  >div{
+    width: 100%;
+  }
+  .ql-toolbar{
+    position: sticky;
+    top: 44px;
+    z-index: 999;
+    background: #fff;
+  }
+  .quill_content{
+    flex: 1;
+    position: relative;
+    z-index: 10;
+  }
+  .quill_content_no_padding>.ql-editor{
+    padding: 0;
+    &.ql-blank::before{
+      left: 0;
+    }
+  }
+}
