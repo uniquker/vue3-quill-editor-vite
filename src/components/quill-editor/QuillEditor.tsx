@@ -152,6 +152,7 @@ export default defineComponent({
       const pos = quill.getSelection()?.index || 0
       // 插入图片到光标位置
       quill.insertEmbed(pos, 'image', path)
+      quill.setSelection(quill.getLength(), quill.getLength() + 1)
     }
     return () => <div class={'quill_editor'} style={{height: props.height || '100%'}}>
       <div class={'ql-toolbar'}>

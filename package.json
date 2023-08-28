@@ -11,19 +11,19 @@
   },
   "files": [
     "dist",
-		"src"
+    "src"
   ],
   "homepage": "https://github.com/uniquker/vue3-quill-editor-vite#readme",
   "main": "./dist/vue3-quill-editor.umd.js",
   "module": "./dist/vue3-quill-editor.es.js",
-	"style": "./dist/style.css",
+  "style": "./dist/style.css",
   "typings": "src/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/vue3-quill-editor.es.js",
       "require": "./dist/vue3-quill-editor.umd.js"
     },
-		"./dist/": "./dist/"
+    "./dist/": "./dist/"
   },
   "repository": {
     "type": "git",
@@ -49,7 +49,8 @@
   "dependencies": {
     "@types/quill": "^2.0.9",
     "quill": "1.3.6",
-    "quill-delta": "3.6.3"
+    "quill-delta": "3.6.3",
+    "vue": "3.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
@@ -58,7 +59,7 @@
     "vite": "^2.8.0",
     "vue-tsc": "^0.29.8"
   },
-	"peerDependencies": {
-    "vue": "^3.2.25"
-	}
+  "peerDependencies": {
+    "vue": "^3.3.2"
+  }
 }
